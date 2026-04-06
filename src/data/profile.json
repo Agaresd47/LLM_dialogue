@@ -5,7 +5,7 @@
     "title": "AI Product / Conversational AI Research | Dialogue Evaluation, Companion UX, Multi-Model Strategy",
     "summaries": [
       "I am looking for 2026 roles in conversational AI product, AI companion design, model evaluation, and applied research for user-facing LLM systems.",
-      "My recent work focuses on turning long-horizon Chinese dialogue experience into benchmark cases, product hypotheses, and structured evaluation workflows for emotional support, clarification, continuity, and everyday assistant behavior."
+      "My recent work turns long-horizon Chinese dialogue experience into evaluation cases, product hypotheses, and structured review workflows focused on emotional support, clarification, continuity, and everyday assistant behavior."
     ],
     "highlights": [
       "Chinese dialogue evaluation",
@@ -138,16 +138,16 @@
           "value": "3"
         },
         {
-          "label": "Comparison framework",
-          "value": "Reusable"
+          "label": "Stable dimensions",
+          "value": "6"
         }
       ],
       "technologies": [
-        "Product Research",
-        "Conversational AI",
-        "Search Behavior",
-        "Tool Use",
-        "Model Comparison"
+        "Dialogue Evaluation",
+        "Model Comparison",
+        "Search Invocation",
+        "Pacing Control",
+        "Closure Strategy"
       ]
     }
   ],

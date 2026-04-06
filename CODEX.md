@@ -87,6 +87,17 @@ The current folder structure now intentionally keeps two separate website repos:
 Do not use `personal-site` as the canonical active repo for this version.
 Do not merge this site back into the CV / technical site unless explicitly requested.
 
+## Web Workflow Rule
+
+For this repo, if the user asks for website copy, layout, or UI refinements and does not explicitly say to keep the work local, the default workflow is:
+
+1. make the change
+2. run the relevant build check
+3. commit
+4. push
+
+Do not stop after local edits waiting for the user to separately ask for push/deploy unless they explicitly want review-only or local-only work.
+
 ## Local Development
 
 Use from repo root:
