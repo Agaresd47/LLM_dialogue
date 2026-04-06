@@ -186,7 +186,7 @@ export default function MobileMenuToggle({
                   className="btn-primary px-3 py-2 rounded-md text-base font-medium flex items-center gap-2"
                   onClick={toggleMenu}
                 >
-                  <span>Open Resume</span>
+                  <span>{isZh ? "查看简历" : "View Resume"}</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"

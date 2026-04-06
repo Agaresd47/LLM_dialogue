@@ -1,41 +1,77 @@
 {
   "basics": {
     "name": "Zifei Dong",
+    "eyebrow": "Conversational AI Product Research",
     "title": "AI Product / Conversational AI Research | Dialogue Evaluation, Companion UX, Multi-Model Strategy",
     "summaries": [
       "I am looking for 2026 roles in conversational AI product, AI companion design, model evaluation, and applied research for user-facing LLM systems.",
       "My recent work focuses on turning long-horizon Chinese dialogue experience into benchmark cases, product hypotheses, and structured evaluation workflows for emotional support, clarification, continuity, and everyday assistant behavior."
     ],
+    "highlights": [
+      "Chinese dialogue evaluation",
+      "Companion assistant strategy",
+      "Everyday LLM behavior research"
+    ],
     "profileImage": "/profile.jpg",
     "resumeUrl": "/Zifei_Dong_Resume.pdf",
     "metaDescription": "Zifei Dong builds Chinese dialogue evaluation, companion assistant strategy, and multi-model behavior research for user-facing AI products."
   },
+  "focus": {
+    "eyebrow": "What I Study",
+    "title": "Interaction quality that matters after the first turn",
+    "intro": "I focus on repeated-use AI systems where correctness alone is not enough. The questions I care about are product questions: what builds trust, when users feel understood, and how model behavior shapes whether a conversation stays useful over time.",
+    "themes": [
+      {
+        "title": "Implicit user-signal recognition",
+        "description": "How well a model notices uncertainty, emotional undertones, or confirmation-seeking when the user does not state the need directly."
+      },
+      {
+        "title": "Companion and support stance",
+        "description": "How assistants choose between comforting, clarifying, challenging, or stepping back, especially in emotionally loaded Chinese dialogue."
+      },
+      {
+        "title": "Everyday assistant trust",
+        "description": "How search behavior, pacing, closure, and tone affect whether a model feels reliable in normal daily decisions rather than one-off demos."
+      }
+    ]
+  },
   "about": {
     "paragraphs": [
-      "I am especially interested in AI systems that people talk to repeatedly rather than use once. That means focusing less on generic benchmark scores and more on how models actually behave across turns: whether they recognize implicit user signals, hold the right conversational stance, maintain continuity, and know when to support, challenge, or step back.",
-      "What I contribute is a product-facing research workflow. I distill long-term real usage into high-signal cases, organize them into buckets, define rubrics and error taxonomy, and compare model behavior in ways that are useful for assistant design, evaluation, and strategy. I care most about Chinese-language interaction quality in companion-like and everyday-life scenarios."
+      "My research focuses on repeated-use AI systems in Chinese-language settings, especially where interaction quality depends on implicit need recognition, conversational continuity, and companion-like support rather than one-turn correctness alone.",
+      "I work in a product-facing way: distilling long-term usage into high-signal cases, building rubrics and error taxonomy, and comparing model behavior in forms that are useful for assistant design, evaluation, and strategy."
     ]
   },
   "experience": [
     {
-      "company": "Independent Research Project, Remote",
-      "position": "Chinese Dialogue Benchmark and Companion Assistant Strategy",
-      "period": "Dec 2025 - Present",
+      "title": "User signal modeling",
+      "label": "Interaction Quality",
       "responsibilities": [
-        "Designed a Chinese dialogue behavior benchmark from long-horizon real conversation samples, centered on implicit user-signal recognition, emotional support, clarification, and relationship continuity.",
-        "Distilled 16 representative cases with paired rubrics across 4 user-state buckets, covering confirmation-seeking, low-salience emotion, challenge and calibration needs, and other high-value Chinese dialogue patterns.",
-        "Built a semi-automated workflow that turns private conversation logs into patterns, error taxonomy, benchmark cases, rubrics, and strategy hypotheses suitable for public showcase and hiring conversations.",
-        "Compared GPT, Claude, and Gemini on Chinese emotional-support and clarification scenarios, then summarized recurring failure modes around stance selection, continuity, premature closure, and challenge timing."
+        "Modeling how users express uncertainty, emotional undertones, and confirmation-seeking without stating them explicitly.",
+        "Looking at how assistants detect low-salience signals and translate them into the right next conversational move."
       ]
     },
     {
-      "company": "Independent Research Project, Remote",
-      "position": "Chinese Everyday Assistant Behavior Study",
-      "period": "Jan 2026 - Present",
+      "title": "Dialogue evaluation design",
+      "label": "Benchmarking",
       "responsibilities": [
-        "Studied assistant behavior in long-term Chinese everyday-use scenarios including purchase decisions, product reviews, cooking, life planning, and AI workflow support.",
-        "Tracked systematic differences across GPT, Claude, and Gemini in demand understanding, search behavior, response style, and closure strategy, with attention to trust and task-completion experience.",
-        "Converted repeated interaction observations into structured evaluation dimensions and product insights for everyday decision assistants, model assessment, and interaction-strategy optimization."
+        "Designing case buckets, rubrics, and taxonomy for long-horizon dialogue where stance, pacing, and continuity matter.",
+        "Turning qualitative interaction observations into structured evaluation assets that teams can reuse."
+      ]
+    },
+    {
+      "title": "Companion assistant strategy",
+      "label": "Product Direction",
+      "responsibilities": [
+        "Studying when assistants should comfort, clarify, challenge, or step back in emotionally loaded conversations.",
+        "Using those patterns to reason about companion UX, support boundaries, and better response defaults."
+      ]
+    },
+    {
+      "title": "Multi-model behavior analysis",
+      "label": "Model Comparison",
+      "responsibilities": [
+        "Comparing GPT, Claude, and Gemini across recurring Chinese everyday tasks rather than isolated prompts.",
+        "Tracking stable differences in search use, task framing, tone, and closure to inform assistant strategy."
       ]
     }
   ],
@@ -51,6 +87,20 @@
         "Built a benchmark with 16 formal cases, 4 user-state buckets, and 48 baseline results across GPT, Claude, and Gemini",
         "Created a semi-automated distillation workflow from private dialogue logs to patterns, case packs, rubrics, taxonomy, and strategy hypotheses",
         "Turned the research into a static public showcase with core cases, reports, and model-by-model evidence for hiring and product discussion"
+      ],
+      "stats": [
+        {
+          "label": "Formal cases",
+          "value": "16"
+        },
+        {
+          "label": "User-state buckets",
+          "value": "4"
+        },
+        {
+          "label": "Baseline evaluations",
+          "value": "48"
+        }
       ],
       "technologies": [
         "LLM Evaluation",
@@ -76,7 +126,21 @@
       "features": [
         "Compared model behavior across consumer decisions, product evaluation, cooking, life planning, and AI workflow tasks drawn from repeated real use",
         "Analyzed systematic differences in intent reading, search invocation, tone, closure strategy, and how each pattern affects trust and task-completion feel",
-        "Converted repeated qualitative observations into reusable evaluation dimensions and product guidance for everyday assistants"
+        "Converted repeated qualitative observations into a reusable comparison framework for demand understanding, tool use, pacing, tone, and closure strategy"
+      ],
+      "stats": [
+        {
+          "label": "Task families",
+          "value": "5+"
+        },
+        {
+          "label": "Frontier model lines",
+          "value": "3"
+        },
+        {
+          "label": "Comparison framework",
+          "value": "Reusable"
+        }
       ],
       "technologies": [
         "Product Research",
@@ -89,7 +153,7 @@
   ],
   "skills": [
     {
-      "category": "Dialogue Product Research",
+      "category": "Methods",
       "items": [
         "Conversation Evaluation",
         "Rubric Design",
@@ -100,25 +164,15 @@
       ]
     },
     {
-      "category": "Applied AI Toolkit",
+      "category": "Tools",
       "items": [
         "Python",
         "Prompting",
         "Structured Annotation",
         "Search Workflows",
         "Experiment Design",
-        "Insight Synthesis"
-      ]
-    },
-    {
-      "category": "Product Focus Areas",
-      "items": [
-        "AI Companion UX",
-        "Chinese Dialogue Quality",
-        "Emotional Support",
-        "Clarification",
-        "Continuity",
-        "Everyday Assistants"
+        "Insight Synthesis",
+        "Lightweight Prototyping"
       ]
     }
   ],
@@ -148,6 +202,10 @@
     {
       "name": "Profile",
       "href": "#about"
+    },
+    {
+      "name": "What I Study",
+      "href": "#focus"
     },
     {
       "name": "Projects",

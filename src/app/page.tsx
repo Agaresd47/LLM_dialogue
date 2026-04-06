@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import FocusSection from "@/components/FocusSection";
 import AboutSection from "@/components/AboutSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import ProjectsSection from "@/components/ProjectsSection";
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
 // Component map for dynamic section rendering
 const sectionComponents = {
   about: AboutSection,
+  focus: FocusSection,
   experience: ExperienceSection,
   projects: ProjectsSection,
   skills: SkillsSection,

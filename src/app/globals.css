@@ -2,13 +2,14 @@
 
 /* Base theme variables */
 :root {
-  /* Main theme colors - essential palette */
-  --background: #ffffff;
-  --foreground: #171717;
-  --primary: #3b82f6; /* Blue 500 */
-  --primary-hover: #2563eb; /* Blue 600 */
+  --background: #f8fbff;
+  --foreground: #0f172a;
+  --primary: #0f766e;
+  --primary-hover: #155e75;
+  --surface: rgba(255, 255, 255, 0.78);
+  --hero-glow: radial-gradient(circle at top left, rgba(34, 211, 238, 0.18), transparent 38%),
+    radial-gradient(circle at 80% 20%, rgba(14, 165, 233, 0.12), transparent 26%);
 
-  /* Gray palette - essential shades */
   --gray-100: #f3f4f6;
   --gray-200: #e5e7eb;
   --gray-300: #d1d5db;
@@ -27,12 +28,14 @@
 /* Dark mode theme - just essential colors */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --primary: #60a5fa; /* Blue 400 for better contrast in dark mode */
-    --primary-hover: #93c5fd; /* Blue 300 */
+    --background: #020617;
+    --foreground: #e2e8f0;
+    --primary: #67e8f9;
+    --primary-hover: #a5f3fc;
+    --surface: rgba(15, 23, 42, 0.72);
+    --hero-glow: radial-gradient(circle at top left, rgba(34, 211, 238, 0.16), transparent 38%),
+      radial-gradient(circle at 80% 20%, rgba(56, 189, 248, 0.14), transparent 26%);
 
-    /* Gray palette for dark mode - essential shades only */
     --gray-100: #1f1f1f;
     --gray-200: #262626;
     --gray-300: #404040;
@@ -53,7 +56,10 @@ html {
 }
 
 body {
-  background: var(--background);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.36), rgba(255, 255, 255, 0)) 0 0 / 100% 22rem no-repeat,
+    var(--hero-glow),
+    var(--background);
   color: var(--foreground);
   font-family: var(
     --font-geist-sans,
@@ -113,23 +119,26 @@ code {
 
 /* Button styles - essential classes */
 .btn-primary {
-  background-color: var(--primary);
+  background: linear-gradient(135deg, var(--primary), var(--primary-hover));
   color: #fff;
+  box-shadow: 0 20px 40px -24px rgba(8, 47, 73, 0.55);
   transition: all 0.2s ease-in-out;
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+  filter: brightness(1.03);
 }
 
 .btn-secondary {
-  background-color: transparent;
-  border: 1px solid var(--gray-300);
+  background-color: var(--surface);
+  border: 1px solid rgba(148, 163, 184, 0.3);
   color: var(--foreground);
+  backdrop-filter: blur(10px);
 }
 
 .btn-secondary:hover {
-  background-color: var(--gray-100);
+  background-color: rgba(255, 255, 255, 0.92);
 }
 
 .btn-call {
@@ -140,4 +149,8 @@ code {
 
 .btn-call:hover {
   background-color: var(--color-green-200);
+}
+
+.hero-shell {
+  position: relative;
 }

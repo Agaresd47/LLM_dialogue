@@ -79,9 +79,9 @@ export default function Header({ locale = "en" }: { locale?: Locale }) {
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-5 py-2 text-sm font-medium rounded-full shadow-sm btn-primary"
-            aria-label={isZh ? "打开简历" : "Open resume"}
+            aria-label={isZh ? "查看简历" : "View resume"}
           >
-            <span>{isZh ? "打开简历" : "Open Resume"}</span>
+            <span>{isZh ? "查看简历" : "View Resume"}</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

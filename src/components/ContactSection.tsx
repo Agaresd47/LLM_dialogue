@@ -28,7 +28,7 @@ export default function ContactSection({ locale = "en" }: { locale?: Locale }) {
               rel="noopener noreferrer"
               className="px-6 py-3 text-center rounded-full btn-primary"
             >
-              {isZh ? "打开简历" : "Open Resume"}
+              {isZh ? "查看简历" : "View Resume"}
             </a>
             <a
               href={`mailto:${contact.email}`}
