@@ -1,0 +1,131 @@
+# Chinese text export for line-by-line editing
+# Format:
+# [ID] | source | key/path | text
+# Edit only the text part after the last "|".
+
+[0001] | src/data/profile.zh.json | basics.name | 董自飞
+[0002] | src/data/profile.zh.json | basics.eyebrow | 对话式 AI 产品研究
+[0003] | src/data/profile.zh.json | basics.title | AI 产品 / 对话式 AI 研究 | 中文对话评测、陪伴体验、多模型策略
+[0004] | src/data/profile.zh.json | basics.summaries[0] | 我在寻找 2026 年的 AI 产品、对话式 AI、AI 陪伴、模型评测与面向用户的大模型应用研究岗位。
+[0005] | src/data/profile.zh.json | basics.summaries[1] | 我最近的工作重点，是把长期中文真实对话经验整理为评测案例、产品假设与结构化评测流程，聚焦情感支持、解惑、关系连续性与生活场景助手行为。
+[0006] | src/data/profile.zh.json | basics.highlights[0] | 中文对话评测
+[0007] | src/data/profile.zh.json | basics.highlights[1] | 陪伴型助手策略
+[0008] | src/data/profile.zh.json | basics.highlights[2] | 生活场景多模型研究
+[0009] | src/data/profile.zh.json | basics.resumeUrl | /董自飞简历.pdf
+[0010] | src/data/profile.zh.json | basics.metaDescription | 董自飞专注中文对话评测、陪伴型助手策略、多模型行为研究与面向用户的 AI 产品工作。
+[0011] | src/data/profile.zh.json | focus.eyebrow | 我在研究什么
+[0012] | src/data/profile.zh.json | focus.title | 那些决定用户会不会继续和 AI 说下去的交互质量
+[0013] | src/data/profile.zh.json | focus.intro | 我关注的是会被反复使用的 AI 系统。在这种场景里，正确性只是基础，真正决定产品体验的是模型能不能理解隐性信号、选对回应姿态、维持连续性，并在长期互动里建立信任感。
+[0014] | src/data/profile.zh.json | focus.themes[0].title | 隐性用户信号识别
+[0015] | src/data/profile.zh.json | focus.themes[0].description | 当用户没有把需求直接说出来时，模型能否察觉不确定、求确认、轻微情绪或更深层的真实诉求。
+[0016] | src/data/profile.zh.json | focus.themes[1].title | 陪伴与支持姿态选择
+[0017] | src/data/profile.zh.json | focus.themes[1].description | 在中文对话里，助手什么时候该安抚、什么时候该追问、什么时候该校准、什么时候该后退一步。
+[0018] | src/data/profile.zh.json | focus.themes[2].title | 生活助手中的信任形成
+[0019] | src/data/profile.zh.json | focus.themes[2].description | 搜索调用、推进节奏、语气风格与结案方式，如何影响用户是否觉得这个助手真的靠谱、好用、值得继续依赖。
+[0020] | src/data/profile.zh.json | about.paragraphs[0] | 我的研究重点是中文语境下会被反复使用的 AI 系统，尤其关注连续多轮交互中的隐性需求识别、关系连续性，以及偏陪伴型场景下的支持体验，而不只是一轮回答是否正确。
+[0021] | src/data/profile.zh.json | about.paragraphs[1] | 我提供的是一套更偏产品侧的研究流程：把长期真实使用蒸馏成高价值案例，建立 rubric 和 error taxonomy，并把多模型行为对比整理成可用于助手设计、评测与策略讨论的结构化结论。
+[0022] | src/data/profile.zh.json | experience[0].title | 用户信号建模
+[0023] | src/data/profile.zh.json | experience[0].label | 交互质量
+[0024] | src/data/profile.zh.json | experience[0].responsibilities[0] | 关注用户没有把需求直接说透时，模型能否识别不确定、求确认、轻微情绪和更深层的真实诉求。
+[0025] | src/data/profile.zh.json | experience[0].responsibilities[1] | 分析助手如何把低显性信号转化为合适的下一步回应。
+[0026] | src/data/profile.zh.json | experience[1].title | 对话评测设计
+[0027] | src/data/profile.zh.json | experience[1].label | Benchmark 设计
+[0028] | src/data/profile.zh.json | experience[1].responsibilities[0] | 设计适合长程对话的 case bucket、rubric 和 taxonomy，评估姿态选择、推进节奏与关系连续性。
+[0029] | src/data/profile.zh.json | experience[1].responsibilities[1] | 把定性交互观察转化为可复用的结构化评测资产。
+[0030] | src/data/profile.zh.json | experience[2].title | 陪伴型助手策略
+[0031] | src/data/profile.zh.json | experience[2].label | 产品方向
+[0032] | src/data/profile.zh.json | experience[2].responsibilities[0] | 研究助手在情绪负载较高的对话中，什么时候该安抚、什么时候该追问、什么时候该校准、什么时候该后退一步。
+[0033] | src/data/profile.zh.json | experience[2].responsibilities[1] | 用这些模式反推陪伴型产品中的默认回复策略与边界设计。
+[0034] | src/data/profile.zh.json | experience[3].title | 多模型行为分析
+[0035] | src/data/profile.zh.json | experience[3].label | 模型比较
+[0036] | src/data/profile.zh.json | experience[3].responsibilities[0] | 围绕中文生活场景中的重复任务，对比 GPT、Claude、Gemini 的稳定行为差异，而不是只看单次 prompt。
+[0037] | src/data/profile.zh.json | experience[3].responsibilities[1] | 跟踪搜索调用、任务 framing、语气风格和结案方式上的偏向，用于支持助手策略判断。
+[0038] | src/data/profile.zh.json | projects[0].name | 中文对话评测 Showcase
+[0039] | src/data/profile.zh.json | projects[0].duration | 2025 年 12 月 - 至今
+[0040] | src/data/profile.zh.json | projects[0].title | 面向中文情感支持与陪伴式交互的行为评测项目
+[0041] | src/data/profile.zh.json | projects[0].description | 一个从长期真实对话中蒸馏出来的公开 benchmark showcase，用来评估中文模型在隐性需求识别、关系连续性、情感支持与校准场景中的交互表现。
+[0042] | src/data/profile.zh.json | projects[0].features[0] | 构建包含 16 条正式 case、4 类用户状态 bucket、48 条 baseline 结果的公开评测资产
+[0043] | src/data/profile.zh.json | projects[0].features[1] | 搭建从私有长对话到 pattern、case pack、rubric、taxonomy 与策略假设的半自动蒸馏流程
+[0044] | src/data/profile.zh.json | projects[0].features[2] | 把研究结果整理成可公开托管的静态展示页、项目报告与多模型对比证据，方便招聘与产品讨论
+[0045] | src/data/profile.zh.json | projects[0].stats[0].label | 正式案例
+[0046] | src/data/profile.zh.json | projects[0].stats[1].label | 用户状态分桶
+[0047] | src/data/profile.zh.json | projects[0].stats[2].label | 基线评测结果
+[0048] | src/data/profile.zh.json | projects[0].technologies[0] | LLM 评测
+[0049] | src/data/profile.zh.json | projects[0].technologies[1] | 对话体验研究
+[0050] | src/data/profile.zh.json | projects[0].technologies[2] | Rubric 设计
+[0051] | src/data/profile.zh.json | projects[0].technologies[3] | Error Taxonomy
+[0052] | src/data/profile.zh.json | projects[0].technologies[4] | Benchmark
+[0053] | src/data/profile.zh.json | projects[0].linkLabel | 在线展示
+[0054] | src/data/profile.zh.json | projects[0].githubLabel | 仓库
+[0055] | src/data/profile.zh.json | projects[0].documentationLabel | 项目报告
+[0056] | src/data/profile.zh.json | projects[1].name | 生活场景助手行为研究
+[0057] | src/data/profile.zh.json | projects[1].duration | 2026 年 1 月 - 至今
+[0058] | src/data/profile.zh.json | projects[1].title | 中文生活场景下的多模型助手行为研究
+[0059] | src/data/profile.zh.json | projects[1].description | 一个持续中的产品研究项目，关注不同前沿模型在中文生活场景中的真实交互表现，重点看信任感、节奏感、搜索调用与结案体验。
+[0060] | src/data/profile.zh.json | projects[1].features[0] | 围绕消费决策、产品测评、做饭、生活规划与 AI workflow 等真实任务，比较多模型默认行为差异
+[0061] | src/data/profile.zh.json | projects[1].features[1] | 分析模型在需求理解、搜索调用、语气风格、推进方式与结案策略上的稳定偏向
+[0062] | src/data/profile.zh.json | projects[1].features[2] | 把长期交互观察整理成可复用的比较框架，用于评估需求理解、工具调用、节奏控制、语气风格与结案策略
+[0063] | src/data/profile.zh.json | projects[1].stats[0].label | 任务家族
+[0064] | src/data/profile.zh.json | projects[1].stats[1].label | 模型主线
+[0065] | src/data/profile.zh.json | projects[1].stats[2].label | 稳定比较维度
+[0066] | src/data/profile.zh.json | projects[1].technologies[0] | 对话评测
+[0067] | src/data/profile.zh.json | projects[1].technologies[1] | 多模型比较
+[0068] | src/data/profile.zh.json | projects[1].technologies[2] | 搜索调用
+[0069] | src/data/profile.zh.json | projects[1].technologies[3] | 节奏控制
+[0070] | src/data/profile.zh.json | projects[1].technologies[4] | 结案策略
+[0071] | src/data/profile.zh.json | skills[0].category | 方法
+[0072] | src/data/profile.zh.json | skills[0].items[0] | Rubric 设计
+[0073] | src/data/profile.zh.json | skills[0].items[1] | 错误分类体系
+[0074] | src/data/profile.zh.json | skills[0].items[2] | 案例蒸馏
+[0075] | src/data/profile.zh.json | skills[0].items[3] | 多模型分析
+[0076] | src/data/profile.zh.json | skills[0].items[4] | 交互策略
+[0077] | src/data/profile.zh.json | skills[0].items[5] | 对话评测
+[0078] | src/data/profile.zh.json | skills[1].category | 工具
+[0079] | src/data/profile.zh.json | skills[1].items[0] | Python
+[0080] | src/data/profile.zh.json | skills[1].items[1] | Prompt 设计
+[0081] | src/data/profile.zh.json | skills[1].items[2] | 结构化标注
+[0082] | src/data/profile.zh.json | skills[1].items[3] | 搜索工作流
+[0083] | src/data/profile.zh.json | skills[1].items[4] | 实验设计
+[0084] | src/data/profile.zh.json | skills[1].items[5] | 洞察归纳
+[0085] | src/data/profile.zh.json | skills[1].items[6] | 轻量原型
+[0086] | src/data/profile.zh.json | education[0].degree | 数据科学硕士
+[0087] | src/data/profile.zh.json | education[0].institution | 范德堡大学
+[0088] | src/data/profile.zh.json | education[0].period | 2024 年 8 月 - 2026 年 5 月（预计）
+[0089] | src/data/profile.zh.json | education[1].degree | 计算机科学与统计双学士
+[0090] | src/data/profile.zh.json | education[1].institution | 北卡罗来纳大学教堂山分校
+[0091] | src/data/profile.zh.json | education[1].period | 2021 年 5 月 - 2024 年 5 月
+[0092] | src/data/profile.zh.json | education[1].description | GPA 3.625/4.0，优秀毕业生
+[0093] | src/data/profile.zh.json | contact.resume | /董自飞简历.pdf
+[0094] | src/data/profile.zh.json | navigation[0].name | 简介
+[0095] | src/data/profile.zh.json | navigation[1].name | 研究关注
+[0096] | src/data/profile.zh.json | navigation[2].name | 项目
+[0097] | src/data/profile.zh.json | navigation[3].name | 研究
+[0098] | src/data/profile.zh.json | navigation[4].name | 工具箱
+[0099] | src/data/profile.zh.json | navigation[5].name | 教育
+[0100] | src/data/profile.zh.json | navigation[6].name | 联系
+[0101] | src/data/profile.zh.json | footer.copyright | Copyright {year} 董自飞。
+
+[0102] | src/components/AboutSection.tsx | zh.title | 简介
+[0103] | src/components/ContactSection.tsx | zh.title | 目前正在寻找 2026 年 AI 产品与对话式 AI 全职机会
+[0104] | src/components/ContactSection.tsx | zh.body | 我重点关注 AI 产品、对话式 AI、AI 陪伴、模型评测与面向用户的大模型应用研究。如果你的团队在做长期交互、中文对话体验、助手策略或评测体系，欢迎联系我。
+[0105] | src/components/ContactSection.tsx | zh.resumeButton | 查看简历
+[0106] | src/components/ContactSection.tsx | zh.emailButton | 邮件联系
+[0107] | src/components/EducationSection.tsx | zh.title | 教育背景
+[0108] | src/components/ExperienceSection.tsx | zh.title | 研究方向
+[0109] | src/components/ExperienceSection.tsx | zh.intro | 这一部分不再重复列项目，而是概括我持续关注的研究问题与产品判断框架。
+[0110] | src/components/Header.tsx | zh.languageToggle | 中文
+[0111] | src/components/Header.tsx | zh.resumeAriaLabel | 查看简历
+[0112] | src/components/Header.tsx | zh.resumeLabel | 查看简历
+[0113] | src/components/HeroSection.tsx | zh.resumeButton | 查看简历
+[0114] | src/components/HeroSection.tsx | zh.projectsButton | 查看项目
+[0115] | src/components/MobileMenuToggle.tsx | zh.languageToggle | 中文
+[0116] | src/components/MobileMenuToggle.tsx | zh.resumeLabel | 查看简历
+[0117] | src/components/ProjectsSection.tsx | zh.title | 核心项目
+[0118] | src/components/ProjectsSection.tsx | zh.intro | 我把项目写成产品讨论材料，而不只是作品展示：问题是什么，如何结构化评估，最后能为助手设计和模型策略带来什么判断。
+[0119] | src/components/ProjectsSection.tsx | zh.focusLabel | 项目主题
+[0120] | src/components/ProjectsSection.tsx | zh.outputLabel | 项目产出
+[0121] | src/components/ProjectsSection.tsx | zh.moreSuffix | 项
+[0122] | src/components/ProjectsSection.tsx | zh.externalLink | 外部链接
+[0123] | src/components/ProjectsSection.tsx | zh.documentation | 项目文档
+[0124] | src/components/SkillsSection.tsx | zh.title | 方法与工具
+[0125] | src/components/SkillsSection.tsx | zh.intro | 把研究方法和实际工具分开写，方便招聘方快速判断我是在做什么分析，以及我是靠什么把它落地。
