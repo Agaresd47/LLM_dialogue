@@ -119,17 +119,6 @@ export default function ProjectsSection({ locale = "en" }: { locale?: Locale }) 
                   </div>
 
                   <div className="flex flex-wrap gap-4 text-sm font-medium">
-                    {project.website && (
-                      <a
-                        href={project.website}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-cyan-700 hover:underline dark:text-cyan-300"
-                      >
-                        {project.websiteLabel ||
-                          (isZh ? "项目网站" : "Project Website")}
-                      </a>
-                    )}
                     {project.link && (
                       <a
                         href={project.link}
