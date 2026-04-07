@@ -1,4 +1,5 @@
 import { getProfileSection, type Locale } from "@/utils/profileData";
+import { withBasePath } from "@/utils/formatters";
 
 export default function ContactSection({ locale = "en" }: { locale?: Locale }) {
   const contact = getProfileSection("contact", locale);
@@ -23,7 +24,7 @@ export default function ContactSection({ locale = "en" }: { locale?: Locale }) {
           </p>
           <div className="flex flex-col justify-center gap-4 mb-8 sm:flex-row">
             <a
-              href={contact.resume}
+              href={withBasePath(contact.resume)}
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 text-center rounded-full btn-primary"

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { getProfileSection, type Locale } from "@/utils/profileData";
+import { withBasePath } from "@/utils/formatters";
 
 export default function HeroSection({ locale = "en" }: { locale?: Locale }) {
   const basics = getProfileSection("basics", locale);
@@ -45,7 +46,7 @@ export default function HeroSection({ locale = "en" }: { locale?: Locale }) {
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <a
-              href={basics.resumeUrl}
+              href={withBasePath(basics.resumeUrl)}
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 text-center rounded-full btn-primary"
@@ -65,7 +66,7 @@ export default function HeroSection({ locale = "en" }: { locale?: Locale }) {
           <div className="pointer-events-none absolute inset-x-8 top-6 -z-10 h-[88%] rounded-[2rem] bg-gradient-to-br from-cyan-400/25 via-sky-300/15 to-transparent blur-2xl" />
           <div className="relative overflow-hidden rounded-[2rem] border border-white/70 shadow-[0_30px_80px_-40px_rgba(8,47,73,0.6)] w-72 h-[24rem] md:w-96 md:h-[30rem] dark:border-slate-800">
             <Image
-              src={basics.profileImage}
+              src={withBasePath(basics.profileImage)}
               alt={basics.name}
               fill
               sizes="(max-width: 768px) 288px, (max-width: 1024px) 384px, 384px"

@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { getProfileSection, type Locale } from "@/utils/profileData";
+import { withBasePath } from "@/utils/formatters";
 
 export default function MobileMenuToggle({
   locale = "en",
@@ -193,7 +194,7 @@ export default function MobileMenuToggle({
               )}
               <li>
                 <a
-                  href={basics.resumeUrl}
+                  href={withBasePath(basics.resumeUrl)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary px-3 py-2 rounded-md text-base font-medium flex items-center gap-2"

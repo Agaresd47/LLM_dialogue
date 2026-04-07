@@ -1,6 +1,7 @@
 import Link from "next/link";
 import MobileMenuToggle from "./MobileMenuToggle";
 import { getProfileSection, type Locale } from "@/utils/profileData";
+import { withBasePath } from "@/utils/formatters";
 
 export default function Header({ locale = "en" }: { locale?: Locale }) {
   const basics = getProfileSection("basics", locale);
@@ -85,7 +86,7 @@ export default function Header({ locale = "en" }: { locale?: Locale }) {
           </div>
 
           <a
-            href={basics.resumeUrl}
+            href={withBasePath(basics.resumeUrl)}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-5 py-2 text-sm font-medium rounded-full shadow-sm btn-primary"

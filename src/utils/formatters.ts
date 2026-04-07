@@ -10,3 +10,13 @@ export function formatDate(dateString: string): string {
     day: "numeric",
   }).format(date);
 }
+
+const BASE_PATH = "/LLM_dialogue";
+
+export function withBasePath(path: string): string {
+  if (!path) return path;
+  if (/^(https?:)?\/\//.test(path)) return path;
+  if (path.startsWith(BASE_PATH)) return path;
+  if (!path.startsWith("/")) return `${BASE_PATH}/${path}`;
+  return `${BASE_PATH}${path}`;
+}
