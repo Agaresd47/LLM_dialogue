@@ -31,6 +31,16 @@ export default function Header({ locale = "en" }: { locale?: Locale }) {
                 GitHub
               </a>
             )}
+            {contact.socialLinks.scholar && (
+              <a
+                href={contact.socialLinks.scholar}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+              >
+                {isZh ? "谷歌学术" : "Google Scholar"}
+              </a>
+            )}
             {contact.socialLinks.linkedin && (
               <a
                 href={contact.socialLinks.linkedin}

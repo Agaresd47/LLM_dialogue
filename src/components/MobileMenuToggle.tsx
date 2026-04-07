@@ -165,6 +165,19 @@ export default function MobileMenuToggle({
                   </a>
                 </li>
               )}
+              {contact.socialLinks.scholar && (
+                <li>
+                  <a
+                    href={contact.socialLinks.scholar}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-blue-600 dark:hover:text-blue-400"
+                    onClick={toggleMenu}
+                  >
+                    {isZh ? "谷歌学术" : "Google Scholar"}
+                  </a>
+                </li>
+              )}
               {contact.socialLinks.linkedin && (
                 <li>
                   <a

@@ -15,7 +15,7 @@ export default function SkillsSection({ locale = "en" }: { locale?: Locale }) {
         </h2>
         <p className="mx-auto mb-12 max-w-3xl text-center text-lg text-slate-600 dark:text-slate-300">
           {locale === "zh"
-            ? "把研究方法和实际工具分开写，方便招聘方快速判断我是在做什么分析，以及我是靠什么把它落地。"
+            ? "把研究方法和实际工具分开写，方便招聘方快速判断我在做什么分析，以及我是靠什么把它落地。"
             : "I separate research method from implementation tooling so the work reads less like a keyword cloud and more like an operating stack."}
         </p>
 

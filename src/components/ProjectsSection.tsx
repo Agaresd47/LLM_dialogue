@@ -17,7 +17,7 @@ export default function ProjectsSection({ locale = "en" }: { locale?: Locale }) 
         </h2>
         <p className="mx-auto mb-12 max-w-3xl text-center text-lg text-slate-600 dark:text-slate-300">
           {isZh
-            ? "我把项目写成产品讨论材料，而不只是作品展示：问题是什么，如何结构化评估，最后能为助手设计和模型策略带来什么判断。"
+            ? "我把项目整理成可讨论的产品材料，而不只是作品展示：问题是什么，如何结构化评估，最后能为助手设计、模型策略与评测方法带来什么判断。"
             : "I frame projects as product evidence rather than portfolio screenshots: what interaction problem was studied, how it was evaluated, and what the work says about assistant design."}
         </p>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -119,6 +119,17 @@ export default function ProjectsSection({ locale = "en" }: { locale?: Locale }) 
                   </div>
 
                   <div className="flex flex-wrap gap-4 text-sm font-medium">
+                    {project.website && (
+                      <a
+                        href={project.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-cyan-700 hover:underline dark:text-cyan-300"
+                      >
+                        {project.websiteLabel ||
+                          (isZh ? "项目网站" : "Project Website")}
+                      </a>
+                    )}
                     {project.link && (
                       <a
                         href={project.link}

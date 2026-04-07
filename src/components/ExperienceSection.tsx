@@ -15,7 +15,7 @@ export default function ExperienceSection({
         </h2>
         <p className="mx-auto mb-12 max-w-3xl text-center text-lg text-slate-600 dark:text-slate-300">
           {locale === "zh"
-            ? "这一部分不再重复列项目，而是概括我持续关注的研究问题与产品判断框架。"
+            ? "这一部分不再重复列项目，而是概括我持续关注的研究问题、评测视角与产品判断框架。"
             : "This section summarizes the research questions I keep returning to, rather than repeating project descriptions."}
         </p>
         <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2">

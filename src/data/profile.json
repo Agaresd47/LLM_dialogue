@@ -109,6 +109,8 @@
         "Taxonomy",
         "Benchmarking"
       ],
+      "website": "https://agaresd47.github.io/text-dialogue-benchmark-showcase/",
+      "websiteLabel": "Project Website",
       "link": "https://agaresd47.github.io/text-dialogue-benchmark-showcase/",
       "linkLabel": "Live Showcase",
       "github": "https://github.com/Agaresd47/text-dialogue-benchmark-showcase",
@@ -176,6 +178,11 @@
       ]
     }
   ],
+  "technicalBackground": {
+    "title": "",
+    "intro": "",
+    "items": []
+  },
   "education": [
     {
       "degree": "M.S. in Data Science",
@@ -195,7 +202,8 @@
     "resume": "/Zifei_Dong_Resume.pdf",
     "socialLinks": {
       "github": "https://github.com/Agaresd47",
-      "linkedin": "https://www.linkedin.com/in/bruce-zdong/"
+      "linkedin": "https://www.linkedin.com/in/bruce-zdong/",
+      "scholar": "https://scholar.google.com/citations?user=BW8oVdIAAAAJ"
     }
   },
   "navigation": [

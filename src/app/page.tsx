@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { Metadata } from "next";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
@@ -6,6 +7,7 @@ import AboutSection from "@/components/AboutSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import SkillsSection from "@/components/SkillsSection";
+import TechnicalBackgroundSection from "@/components/TechnicalBackgroundSection";
 import EducationSection from "@/components/EducationSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -49,9 +51,16 @@ function PortfolioPage({ locale = "en" }: { locale?: Locale }) {
           if (!SectionComponent) return null;
 
           return (
-            <AnimateSection key={sectionId} id={sectionId}>
-              <SectionComponent locale={locale} />
-            </AnimateSection>
+            <Fragment key={sectionId}>
+              <AnimateSection key={sectionId} id={sectionId}>
+                <SectionComponent locale={locale} />
+              </AnimateSection>
+              {sectionId === "skills" && (
+                <AnimateSection id="technical-background">
+                  <TechnicalBackgroundSection locale={locale} />
+                </AnimateSection>
+              )}
+            </Fragment>
           );
         })}
       </main>
