@@ -6,17 +6,16 @@ export default function ExperienceSection({
   locale?: Locale;
 }) {
   const experiences = getProfileSection("experience", locale);
+  const header = getProfileSection("experienceHeader", locale);
 
   return (
     <section id="experience" className="py-20">
       <div className="container mx-auto px-6">
         <h2 className="mb-4 text-3xl font-bold text-center">
-          {locale === "zh" ? "研究方向" : "Research Directions"}
+          {header.title}
         </h2>
         <p className="mx-auto mb-12 max-w-3xl text-center text-lg text-slate-600 dark:text-slate-300">
-          {locale === "zh"
-            ? "这一部分不再重复列项目，而是概括我持续关注的研究问题、评测视角与产品判断框架。"
-            : "This section summarizes the research questions I keep returning to, rather than repeating project descriptions."}
+          {header.intro}
         </p>
         <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2">
           {experiences.map((item, index) => (

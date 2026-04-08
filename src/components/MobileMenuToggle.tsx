@@ -12,6 +12,7 @@ export default function MobileMenuToggle({
   const navigation = getProfileSection("navigation", locale);
   const basics = getProfileSection("basics", locale);
   const contact = getProfileSection("contact", locale);
+  const ui = getProfileSection("ui", locale);
   const isZh = locale === "zh";
 
   // Start with a consistent state
@@ -175,7 +176,7 @@ export default function MobileMenuToggle({
                     className="block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-blue-600 dark:hover:text-blue-400"
                     onClick={toggleMenu}
                   >
-                    {isZh ? "谷歌学术" : "Google Scholar"}
+                    {ui.googleScholar}
                   </a>
                 </li>
               )}
@@ -200,7 +201,7 @@ export default function MobileMenuToggle({
                   className="btn-primary px-3 py-2 rounded-md text-base font-medium flex items-center gap-2"
                   onClick={toggleMenu}
                 >
-                  <span>{isZh ? "查看简历" : "View Resume"}</span>
+                  <span>{ui.viewResume}</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"

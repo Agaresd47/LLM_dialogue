@@ -4,7 +4,7 @@ import { withBasePath } from "@/utils/formatters";
 
 export default function HeroSection({ locale = "en" }: { locale?: Locale }) {
   const basics = getProfileSection("basics", locale);
-  const isZh = locale === "zh";
+  const ui = getProfileSection("ui", locale);
 
   return (
     <section className="hero-shell container mx-auto px-6 py-16 md:py-20">
@@ -51,13 +51,13 @@ export default function HeroSection({ locale = "en" }: { locale?: Locale }) {
               rel="noopener noreferrer"
               className="px-6 py-3 text-center rounded-full btn-primary"
             >
-              {isZh ? "查看简历" : "View Resume"}
+              {ui.viewResume}
             </a>
             <a
               href="#projects"
               className="px-6 py-3 text-center rounded-full btn-secondary"
             >
-              {isZh ? "查看项目" : "View Projects"}
+              {ui.viewProjects}
             </a>
           </div>
         </div>

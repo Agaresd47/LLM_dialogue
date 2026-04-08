@@ -2,6 +2,7 @@ import { getProfileSection, type Locale } from "@/utils/profileData";
 
 export default function SkillsSection({ locale = "en" }: { locale?: Locale }) {
   const skills = getProfileSection("skills", locale);
+  const header = getProfileSection("skillsHeader", locale);
 
   if (!skills || !Array.isArray(skills) || skills.length === 0) {
     return null; // or some fallback UI
@@ -11,12 +12,10 @@ export default function SkillsSection({ locale = "en" }: { locale?: Locale }) {
     <section id="skills" className="py-20">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold mb-4 text-center">
-          {locale === "zh" ? "方法与工具" : "Methods and Tools"}
+          {header.title}
         </h2>
         <p className="mx-auto mb-12 max-w-3xl text-center text-lg text-slate-600 dark:text-slate-300">
-          {locale === "zh"
-            ? "把研究方法和实际工具分开写，方便招聘方快速判断我在做什么分析，以及我是靠什么把它落地。"
-            : "I separate research method from implementation tooling so the work reads less like a keyword cloud and more like an operating stack."}
+          {header.intro}
         </p>
 
         <div className="max-w-5xl mx-auto grid gap-6 md:grid-cols-2">

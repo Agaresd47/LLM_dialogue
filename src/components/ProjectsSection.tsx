@@ -3,7 +3,8 @@ import Image from "next/image";
 
 export default function ProjectsSection({ locale = "en" }: { locale?: Locale }) {
   const projects = getProfileSection("projects", locale);
-  const isZh = locale === "zh";
+  const header = getProfileSection("projectsHeader", locale);
+  const ui = getProfileSection("ui", locale);
 
   if (!projects || projects.length === 0) {
     return null; // Return null if no projects are found
@@ -13,12 +14,10 @@ export default function ProjectsSection({ locale = "en" }: { locale?: Locale }) 
     <section id="projects" className="py-20 bg-white dark:bg-neutral-900">
       <div className="container px-6 mx-auto">
         <h2 className="mb-4 text-3xl font-bold text-center">
-          {locale === "zh" ? "核心项目" : "Core Projects"}
+          {header.title}
         </h2>
         <p className="mx-auto mb-12 max-w-3xl text-center text-lg text-slate-600 dark:text-slate-300">
-          {isZh
-            ? "我把项目整理成可讨论的产品材料，而不只是作品展示：问题是什么，如何结构化评估，最后能为助手设计、模型策略与评测方法带来什么判断。"
-            : "I frame projects as product evidence rather than portfolio screenshots: what interaction problem was studied, how it was evaluated, and what the work says about assistant design."}
+          {header.intro}
         </p>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {projects.map((project) => {
@@ -45,7 +44,7 @@ export default function ProjectsSection({ locale = "en" }: { locale?: Locale }) 
                   ) : (
                     <div>
                       <p className="mb-2 text-sm font-semibold uppercase tracking-[0.22em] text-white/75">
-                        {isZh ? "项目主题" : "Project Focus"}
+                        {ui.projectFocus}
                       </p>
                       <h3 className="text-2xl font-semibold leading-tight">
                         {project.name}
@@ -89,7 +88,7 @@ export default function ProjectsSection({ locale = "en" }: { locale?: Locale }) 
 
                   <div className="mb-5 rounded-2xl bg-slate-50 p-4 dark:bg-slate-900">
                     <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
-                      {isZh ? "项目产出" : "What This Produced"}
+                      {ui.whatThisProduced}
                     </p>
                     <ul className="space-y-2 text-sm leading-7 text-slate-700 dark:text-slate-300">
                       {project.features.map((feature, index) => (
@@ -113,7 +112,7 @@ export default function ProjectsSection({ locale = "en" }: { locale?: Locale }) 
                     {project.technologies.length > 5 && (
                       <span className="rounded-full border border-slate-200 bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200">
                         +{project.technologies.length - 5}{" "}
-                        {isZh ? "项" : "more"}
+                        {ui.more}
                       </span>
                     )}
                   </div>
@@ -126,8 +125,7 @@ export default function ProjectsSection({ locale = "en" }: { locale?: Locale }) 
                         rel="noopener noreferrer"
                         className="text-cyan-700 hover:underline dark:text-cyan-300"
                       >
-                        {project.linkLabel ||
-                          (isZh ? "外部链接" : "External Link")}
+                        {project.linkLabel || ui.externalLink}
                       </a>
                     )}
                     {project.github && (
@@ -147,8 +145,7 @@ export default function ProjectsSection({ locale = "en" }: { locale?: Locale }) 
                         rel="noopener noreferrer"
                         className="text-cyan-700 hover:underline dark:text-cyan-300"
                       >
-                        {project.documentationLabel ||
-                          (isZh ? "项目文档" : "Documentation")}
+                        {project.documentationLabel || ui.documentation}
                       </a>
                     )}
                   </div>

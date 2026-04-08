@@ -6,12 +6,13 @@ export default function EducationSection({
   locale?: Locale;
 }) {
   const education = getProfileSection("education", locale);
+  const ui = getProfileSection("ui", locale);
 
   return (
     <section id="education" className="bg-white dark:bg-neutral-900 py-18">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold mb-10 text-center">
-          {locale === "zh" ? "教育背景" : "Education"}
+          {ui.educationSectionTitle}
         </h2>
         <div className="max-w-3xl mx-auto space-y-6">
           {education.map((edu, index) => (

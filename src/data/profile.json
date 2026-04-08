@@ -1,185 +1,199 @@
 {
   "basics": {
     "name": "Zifei Dong",
-    "eyebrow": "Conversational AI Product Research",
-    "title": "AI Product / Conversational AI Research | Dialogue Evaluation, Companion UX, Multi-Model Strategy",
+    "eyebrow": "Conversational AI / Human-AI Interaction",
+    "title": "AI Product / Conversational AI Research | Chinese Dialogue Evaluation, Companion Experience, Multi-Model Strategy",
     "summaries": [
-      "I am looking for 2026 roles in conversational AI product, AI companion design, model evaluation, and applied research for user-facing LLM systems.",
-      "My recent work turns long-horizon Chinese dialogue experience into evaluation cases, product hypotheses, and structured review workflows focused on emotional support, clarification, continuity, and everyday assistant behavior."
+      "I am seeking 2026 roles in AI product, conversational AI, AI companionship, model evaluation, and user-facing LLM application research.",
+      "My recent work focuses on building evaluation cases, product hypotheses, and structured evaluation workflows from long-horizon real Chinese conversations, with an emphasis on implicit need recognition, relational continuity, and companion-style interaction.",
+      "I am especially interested in the factors that determine whether users keep talking to AI over time: response stance, pacing, search/tool use, closure style, and whether a model can switch tone appropriately across contexts."
     ],
     "highlights": [
-      "Chinese dialogue evaluation",
-      "Companion assistant strategy",
-      "Everyday LLM behavior research"
+      "User Signal Modeling",
+      "Dialogue Evaluation Design",
+      "Companion Assistant Strategy"
     ],
     "profileImage": "/profile.jpg",
     "resumeUrl": "/Zifei_Dong_Resume.pdf",
-    "metaDescription": "Zifei Dong builds Chinese dialogue evaluation, companion assistant strategy, and multi-model behavior research for user-facing AI products."
-  },
-  "focus": {
-    "eyebrow": "What I Study",
-    "title": "Interaction quality that matters after the first turn",
-    "intro": "I focus on repeated-use AI systems where correctness alone is not enough. The questions I care about are product questions: what builds trust, when users feel understood, and how model behavior shapes whether a conversation stays useful over time.",
-    "themes": [
-      {
-        "title": "Implicit user-signal recognition",
-        "description": "How well a model notices uncertainty, emotional undertones, or confirmation-seeking when the user does not state the need directly."
-      },
-      {
-        "title": "Companion and support stance",
-        "description": "How assistants choose between comforting, clarifying, challenging, or stepping back, especially in emotionally loaded Chinese dialogue."
-      },
-      {
-        "title": "Everyday assistant trust",
-        "description": "How search behavior, pacing, closure, and tone affect whether a model feels reliable in normal daily decisions rather than one-off demos."
-      }
-    ]
+    "metaDescription": "Zifei Dong focuses on Chinese dialogue evaluation, companion assistant strategy, multi-model behavior research, and user-facing AI product work."
   },
   "about": {
+    "_comment": "About",
     "paragraphs": [
-      "My research focuses on repeated-use AI systems in Chinese-language settings, especially where interaction quality depends on implicit need recognition, conversational continuity, and companion-like support rather than one-turn correctness alone.",
-      "I work in a product-facing way: distilling long-term usage into high-signal cases, building rubrics and error taxonomy, and comparing model behavior in forms that are useful for assistant design, evaluation, and strategy."
+      "My research focuses on AI systems in Chinese contexts that users return to repeatedly. I am especially interested in implicit need recognition, relational continuity across multi-turn interactions, and supportive experiences in companion-oriented scenarios, rather than only whether a single response is correct.",
+      "What I offer is a more product-oriented research workflow: distilling long-term real usage into high-value cases, building rubrics and error taxonomies, and organizing cross-model behavioral comparisons into structured findings that can inform assistant design, evaluation, and strategy discussions.",
+      "Before shifting toward conversational AI and Human-AI Interaction, I worked extensively in medical imaging, complex data modeling, and domain-adaptive LLM training. That background makes me naturally approach user understanding, evaluation design, model behavior, and engineering implementation as parts of one connected system."
     ]
   },
-  "experience": [
-    {
-      "title": "User signal modeling",
-      "label": "Interaction Quality",
-      "responsibilities": [
-        "Modeling how users express uncertainty, emotional undertones, and confirmation-seeking without stating them explicitly.",
-        "Looking at how assistants detect low-salience signals and translate them into the right next conversational move."
-      ]
-    },
-    {
-      "title": "Dialogue evaluation design",
-      "label": "Benchmarking",
-      "responsibilities": [
-        "Designing case buckets, rubrics, and taxonomy for long-horizon dialogue where stance, pacing, and continuity matter.",
-        "Turning qualitative interaction observations into structured evaluation assets that teams can reuse."
-      ]
-    },
-    {
-      "title": "Companion assistant strategy",
-      "label": "Product Direction",
-      "responsibilities": [
-        "Studying when assistants should comfort, clarify, challenge, or step back in emotionally loaded conversations.",
-        "Using those patterns to reason about companion UX, support boundaries, and better response defaults."
-      ]
-    },
-    {
-      "title": "Multi-model behavior analysis",
-      "label": "Model Comparison",
-      "responsibilities": [
-        "Comparing GPT, Claude, and Gemini across recurring Chinese everyday tasks rather than isolated prompts.",
-        "Tracking stable differences in search use, task framing, tone, and closure to inform assistant strategy."
-      ]
-    }
-  ],
+  "focus": {
+    "eyebrow": "What I Care About",
+    "title": "What Determines Whether Users Continue Talking to AI in Long-Term Interaction",
+    "intro": "I focus on AI systems people return to over time, because in long-term interaction, the core experience is often shaped less by one-turn correctness and more by whether the model can keep giving responses that users want to respond to."
+  },
+  "projectsHeader": {
+    "title": "Core Projects",
+    "intro": "My most important current research and practice: extracting problems from long-horizon real interactions, building evaluation and comparison frameworks, and turning results into evidence that supports assistant design and model strategy decisions."
+  },
   "projects": [
     {
-      "name": "Chinese Dialogue Benchmark Showcase",
+      "name": "Chinese Dialogue Evaluation and Analysis Project",
       "image": null,
-      "color": "from-orange-500 to-rose-600",
+      "color": "from-cyan-500 to-sky-600",
       "duration": "Dec 2025 - Present",
-      "title": "Behavior Benchmark for Chinese Emotional Support and Companion-Like Dialogue",
-      "description": "A public-facing benchmark showcase distilled from long-horizon real dialogue, built to evaluate how Chinese-language models handle implicit needs, continuity, emotional support, and calibration.",
+      "title": "Behavior Evaluation for Chinese Emotional Support and Companion-Style Interaction",
+      "description": "A public Chinese dialogue behavior benchmark distilled from long-horizon real conversations, designed to evaluate model performance in implicit need recognition, relational continuity, emotional support, and calibration scenarios, with additional multi-rater sensitivity checks.",
       "features": [
-        "Built a benchmark with 16 formal cases, 4 user-state buckets, and 48 baseline results across GPT, Claude, and Gemini",
-        "Created a semi-automated distillation workflow from private dialogue logs to patterns, case packs, rubrics, taxonomy, and strategy hypotheses",
-        "Turned the research into a static public showcase with core cases, reports, and model-by-model evidence for hiring and product discussion"
+        "Built a public evaluation asset with 16 core cases, 4 user-state buckets, 48 baseline outputs, and 4 multi-rater validation cases",
+        "Developed a semi-automated distillation workflow from private long conversations to patterns, case sets, rubrics, error taxonomies, and strategy hypotheses",
+        "Organized findings into a public static showcase, project report, and multi-model comparison evidence for recruiting, product discussion, and evaluation-method exchange"
       ],
       "stats": [
         {
-          "label": "Formal cases",
+          "label": "Core Cases",
           "value": "16"
         },
         {
-          "label": "User-state buckets",
+          "label": "User-State Buckets",
           "value": "4"
         },
         {
-          "label": "Baseline evaluations",
+          "label": "Baseline Results",
           "value": "48"
         }
       ],
       "technologies": [
-        "LLM Evaluation",
-        "Dialogue UX",
+        "Dialogue Evaluation",
+        "Multi-Model Behavior Analysis",
         "Rubric Design",
-        "Taxonomy",
-        "Benchmarking"
+        "Error Taxonomy",
+        "Multi-Rater Validation"
       ],
       "link": "https://agaresd47.github.io/text-dialogue-benchmark-showcase/",
-      "linkLabel": "Live Showcase",
+      "linkLabel": "Live Demo",
       "github": "https://github.com/Agaresd47/text-dialogue-benchmark-showcase",
       "githubLabel": "Repository",
       "documentation": "https://github.com/Agaresd47/text-dialogue-benchmark-showcase/blob/main/%E9%A1%B9%E7%9B%AE%E6%8A%A5%E5%91%8A.md",
       "documentationLabel": "Project Report"
     },
     {
-      "name": "Everyday Assistant Behavior Study",
+      "name": "Implicit Needs and Interaction Pattern Research",
       "image": null,
       "color": "from-sky-500 to-cyan-600",
       "duration": "Jan 2026 - Present",
-      "title": "Multi-Model Study of Chinese Everyday Assistant Behavior",
-      "description": "An ongoing product research project on how different frontier models behave in Chinese everyday-use settings where trust, pacing, and closure matter as much as correctness.",
+      "title": "Implicit Need Modeling and Interaction Pattern Research in Long-Horizon Human-AI Dialogue",
+      "description": "An ongoing research project on recurring implicit needs and interaction patterns in long-horizon real human-AI conversations. It examines how models identify confirmation-seeking, understanding tests, low-explicitness expression, and calibration needs, and why current assistants are better at remembering facts than adapting to the same user's emotional needs across changing contexts over time.",
       "features": [
-        "Compared model behavior across consumer decisions, product evaluation, cooking, life planning, and AI workflow tasks drawn from repeated real use",
-        "Analyzed systematic differences in intent reading, search invocation, tone, closure strategy, and how each pattern affects trust and task-completion feel",
-        "Converted repeated qualitative observations into a reusable comparison framework for demand understanding, tool use, pacing, tone, and closure strategy"
+        "Analyzing four high-value implicit-need patterns: asking for advice while actually seeking confirmation; sounding analytical while actually testing understanding; expressing needs indirectly and requiring proactive sensing; and having a prior stance while needing calibration or challenge",
+        "Studying repeated patterns in long-horizon dialogue, such as recurring mentions of work, relationships, or life stress during specific periods, and how these reflect more stable emotional signals rather than one-off factual content",
+        "Summarizing common long-term memory biases in current models: they are better at reinforcing event-level user tags, but weaker at tracking shifting emotional needs and response preferences across time and context"
       ],
       "stats": [
         {
-          "label": "Task families",
-          "value": "5+"
+          "label": "Core Need Types",
+          "value": "4"
         },
         {
-          "label": "Frontier model lines",
-          "value": "3"
+          "label": "Dialogue Samples",
+          "value": "Long Horizon"
         },
         {
-          "label": "Stable dimensions",
-          "value": "6"
+          "label": "Focus",
+          "value": "Need Patterns"
         }
       ],
       "technologies": [
-        "Dialogue Evaluation",
-        "Model Comparison",
-        "Search Invocation",
-        "Pacing Control",
-        "Closure Strategy"
+        "User Signal Modeling",
+        "Long-Horizon Dialogue",
+        "Implicit Need Recognition",
+        "Interaction Pattern Analysis",
+        "Companion Assistant"
       ]
     }
   ],
+  "experienceHeader": {
+    "title": "Research Directions",
+    "intro": "I continue to study the factors that shape whether users want to keep talking to AI in long-term interaction, including implicit need recognition, supportive response stance, trust formation, and how these can be expressed structurally in evaluation and product strategy."
+  },
+  "experience": [
+    {
+      "title": "User Signal Modeling",
+      "label": "Interaction Quality",
+      "responsibilities": [
+        "Study whether models can detect uncertainty, confirmation-seeking, subtle emotion, and deeper underlying intent when users do not state their needs directly.",
+        "Analyze how assistants can turn low-explicitness signals into more appropriate next responses."
+      ]
+    },
+    {
+      "title": "Dialogue Evaluation Design",
+      "label": "Benchmark Design",
+      "responsibilities": [
+        "Design long-horizon dialogue case sets, rubrics, and error taxonomies to evaluate response stance, pacing, and relational continuity.",
+        "Turn qualitative interaction observations into reusable structured evaluation assets."
+      ]
+    },
+    {
+      "title": "Long-Horizon Interaction Pattern Analysis",
+      "label": "Longitudinal Observation",
+      "responsibilities": [
+        "Analyze how implicit needs, confirmation-seeking, low-explicitness expression, and calibration needs recur across time and scenarios in long-horizon real human-AI conversations.",
+        "Compare model defaults in memory use, response stance, and style switching, and examine why models more easily remember facts than adapt to changing emotional needs."
+      ]
+    },
+    {
+      "title": "Companion Assistant Strategy",
+      "label": "Product Direction",
+      "responsibilities": [
+        "Study when assistants in emotionally loaded conversations should comfort, probe further, calibrate, or give users more autonomy.",
+        "Use these patterns to inform default response strategy, switching conditions, and boundary design in companion-oriented products."
+      ]
+    }
+  ],
+  "skillsHeader": {
+    "title": "Methods and Tools",
+    "intro": "These are the main methods I use to turn long-term interaction observations into cases, evaluation assets, and product judgments, along with the tools I use for analysis and prototyping."
+  },
   "skills": [
     {
       "category": "Methods",
       "items": [
-        "Conversation Evaluation",
         "Rubric Design",
         "Error Taxonomy",
         "Case Distillation",
         "Multi-Model Analysis",
-        "Interaction Strategy"
+        "Multi-Rater Validation",
+        "Dialogue Evaluation"
       ]
     },
     {
       "category": "Tools",
       "items": [
         "Python",
-        "Prompting",
+        "Prompt Design",
         "Structured Annotation",
         "Search Workflows",
-        "Experiment Design",
+        "Experimental Design",
         "Insight Synthesis",
-        "Lightweight Prototyping"
+        "Prototype Validation"
       ]
     }
   ],
   "technicalBackground": {
-    "title": "",
-    "intro": "",
-    "items": []
+    "title": "Relevant Technical Experience",
+    "intro": "Beyond dialogue evaluation and product research, I also have a strong modeling and engineering background. This helps me bring user understanding, evaluation design, model behavior, and implementation constraints together more naturally in Human-AI Interaction work.",
+    "items": [
+      {
+        "title": "Domain-Adaptive LLM Training",
+        "description": "Worked on domain-adaptive LLM projects for long-context understanding, structured information extraction, and fine-grained text classification, responsible for Qwen-based training, tuning, and experiment iteration, with familiarity in QLoRA, SGLang, CoT, and RLHF-style alignment."
+      },
+      {
+        "title": "Medical Imaging Generation and Analysis",
+        "description": "Independently led research in medical imaging generation and analysis, handling 8TB+ heterogeneous data and more than 50,000 CT cases, with experience in complex data construction, weakly supervised learning, and end-to-end training optimization."
+      },
+      {
+        "title": "High-Noise Data Modeling and Engineering Optimization",
+        "description": "Gained quantitative and data engineering internship experience involving large-scale data cleaning, feature generation, training pipeline optimization, and key-module acceleration, with the ability to turn research prototypes into stable and reusable workflows."
+      }
+    ]
   },
   "education": [
     {
@@ -190,12 +204,20 @@
     },
     {
       "degree": "B.S. in Computer Science and Statistics",
-      "institution": "UNC-Chapel Hill",
+      "institution": "University of North Carolina at Chapel Hill",
       "period": "May 2021 - May 2024",
-      "description": "GPA 3.625/4.0, graduated with distinction"
+      "description": "GPA 3.625/4.0, Distinguished Graduate"
+    },
+    {
+      "degree": "Computer Science",
+      "institution": "Case Western Reserve University",
+      "period": "Aug 2020 - May 2021",
+      "description": "GPA 4.0/4.0, Dean's Honor List"
     }
   ],
   "contact": {
+    "title": "Currently Seeking 2026 Full-Time Opportunities in AI Product, Conversational AI, and Model Evaluation",
+    "description": "I am especially interested in AI product, conversational AI, AI companionship, model evaluation, and user-facing LLM application research. If your team works on long-term interaction, Chinese dialogue experience, assistant strategy, personalized responses, or evaluation systems, feel free to reach out.",
     "email": "zifei.dong@vanderbilt.edu",
     "resume": "/Zifei_Dong_Resume.pdf",
     "socialLinks": {
@@ -206,11 +228,11 @@
   },
   "navigation": [
     {
-      "name": "Profile",
+      "name": "About",
       "href": "#about"
     },
     {
-      "name": "What I Study",
+      "name": "Focus",
       "href": "#focus"
     },
     {
@@ -236,6 +258,19 @@
   ],
   "footer": {
     "copyright": "Copyright {year} Zifei Dong."
+  },
+  "ui": {
+    "aboutSectionTitle": "About",
+    "educationSectionTitle": "Education",
+    "viewResume": "View Resume",
+    "viewProjects": "View Projects",
+    "emailMe": "Email Me",
+    "projectFocus": "Project Focus",
+    "whatThisProduced": "Outputs",
+    "more": "items",
+    "externalLink": "External Link",
+    "documentation": "Documentation",
+    "googleScholar": "Google Scholar"
   },
   "siteConfig": {
     "accentColor": "blue",

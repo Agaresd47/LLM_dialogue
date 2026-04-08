@@ -7,6 +7,7 @@ export default function Header({ locale = "en" }: { locale?: Locale }) {
   const basics = getProfileSection("basics", locale);
   const navigation = getProfileSection("navigation", locale);
   const contact = getProfileSection("contact", locale);
+  const ui = getProfileSection("ui", locale);
   const isZh = locale === "zh";
 
   return (
@@ -39,7 +40,7 @@ export default function Header({ locale = "en" }: { locale?: Locale }) {
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
               >
-                {isZh ? "谷歌学术" : "Google Scholar"}
+                {ui.googleScholar}
               </a>
             )}
             {contact.socialLinks.linkedin && (
@@ -90,9 +91,9 @@ export default function Header({ locale = "en" }: { locale?: Locale }) {
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-5 py-2 text-sm font-medium rounded-full shadow-sm btn-primary"
-            aria-label={isZh ? "查看简历" : "View resume"}
+            aria-label={ui.viewResume}
           >
-            <span>{isZh ? "查看简历" : "View Resume"}</span>
+            <span>{ui.viewResume}</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
