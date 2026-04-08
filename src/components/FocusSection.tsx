@@ -2,6 +2,7 @@ import { getProfileSection, type Locale } from "@/utils/profileData";
 
 export default function FocusSection({ locale = "en" }: { locale?: Locale }) {
   const focus = getProfileSection("focus", locale);
+  const themes = (focus as any).themes || [];
 
   return (
     <section id="focus" className="py-20">
@@ -19,9 +20,9 @@ export default function FocusSection({ locale = "en" }: { locale?: Locale }) {
             </p>
           </div>
 
-          {focus.themes && focus.themes.length > 0 && (
+          {themes.length > 0 && (
             <div className="grid gap-6 md:grid-cols-3">
-              {focus.themes.map((theme, index) => (
+              {themes.map((theme: any, index: number) => (
                 <article
                   key={theme.title}
                   className="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-[0_24px_70px_-50px_rgba(15,23,42,0.6)] dark:border-slate-800 dark:bg-slate-900/80"
